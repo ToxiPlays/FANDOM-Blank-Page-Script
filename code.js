@@ -1,3 +1,7 @@
+window.FandomBlankPageScript = {};
+FandomBlankPageScript.config = {};
+FandomBlankPageScript.config.MarkAsMinorEdit = false;
+
 function BlankPage() {
     $.ajax({
         url: mw.util.wikiScript('api'),
@@ -8,13 +12,13 @@ function BlankPage() {
             summary: 'Blanked page using [https://github.com/DaChickenKing/FANDOM-Blank-Page FANDOM Blank Page Script]',
             text: "",
             bot: 1,
+            minor: window.FandomBlankPageScript.configMarkAsMinorEdit,
             token: mw.user.tokens.get('editToken'),
             format: 'json'
         },
         success: function(d) {
             if (d.edit.result == 'Success') {
-                //location.href += (location.href.indexOf('?') > -1) ? '&action=purge' : '?action=purge';
-                location.refresh();
+                location.reload();
             }
         }
     });
