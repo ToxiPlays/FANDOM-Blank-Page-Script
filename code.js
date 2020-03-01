@@ -5,7 +5,7 @@ function BlankPage() {
         data: {
             action: 'edit',
             title: wgPageName,
-            summary: 'Blanked page using script',
+            summary: 'Blanked page using [https://github.com/DaChickenKing/FANDOM-Blank-Page FANDOM Blank Page Script]',
             text: "",
             bot: 1,
             token: mw.user.tokens.get('editToken'),
