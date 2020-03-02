@@ -9,7 +9,7 @@ function BlankPage() {
         data: {
             action: 'edit',
             title: wgPageName,
-            summary: 'Blanked page using [https://github.com/DaChickenKing/FANDOM-Blank-Page FANDOM Blank Page Script]',
+            summary: 'Blanked page using [[w:c:dev:User:DaChickenKing/PageBlankScript|FANDOM Blank Page Script]]',
             text: "",
             bot: 1,
             minor: window.FandomBlankPageScript.configMarkAsMinorEdit,
