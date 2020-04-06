@@ -1,6 +1,8 @@
-window.FandomBlankPageScript = {};
-FandomBlankPageScript.config = {};
-FandomBlankPageScript.config.MarkAsMinorEdit = false;
+if(window.FandomBlankPageScript === null;) {
+    window.FandomBlankPageScript = {};
+    FandomBlankPageScript.config = {};
+    FandomBlankPageScript.config.MarkAsMinorEdit = false;
+}
 
 function BlankPage() {
     $.ajax({
